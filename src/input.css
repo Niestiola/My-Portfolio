@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Bricolage Grotesque", "Segoe UI", system-ui, Roboto, Arial, sans-serif;
+  --color-cobalt: #1F3FD6;
+  --color-navy: #0B1757;
+  --color-paper: #F6F4EE;
+  --color-cream: #F4F1E8;
+  --color-pale: #D5DBFA;
+  --color-sun: #FFD21F;
+  --color-muted: #5A6190;
+  --color-body: #3A4170;
+  --color-line: #DAD7CC;
+  --color-chip: #B9C0E0;
+}

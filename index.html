@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PRIMARY SEO TAGS -->
+    <title>Developer Name | Frontend Developer & Full-Stack Learner</title>
+    <meta name="description" content="Portfolio of [Name], a Frontend Developer proficient in HTML, CSS, and JavaScript, currently specializing in React, Next.js, and Backend development.">
+    <meta name="keywords" content="Frontend Developer, Web Developer Portfolio, React Learner, Next.js, JavaScript Developer, Junior Web Developer">
+    <link rel="canonical" href="https://www.yourdomain.com/">
+
+    <!-- OPEN GRAPH (For Social Media Sharing) -->
+    <meta property="og:title" content="Developer Name | Frontend Developer Portfolio">
+    <meta property="og:description" content="Explore the projects and learning journey of [Name], a budding Full-Stack Developer.">
+    <meta property="og:image" content="https://www.yourdomain.com/og-image.jpg">
+    <meta property="og:url" content="https://www.yourdomain.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts, styles & icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        html { scroll-padding-top: 5rem; }
+        a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid #0B1757; outline-offset: 3px; }
+        .on-blue a:focus-visible, .on-blue summary:focus-visible { outline-color: #F4F1E8; }
+        summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="bg-paper text-navy font-sans leading-relaxed">
+
+    <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[60] focus:bg-sun focus:text-navy focus:px-4 focus:py-2 focus:rounded-lg">Skip to content</a>
+
+    <!-- NAVIGATION: Semantic <header> and <nav> -->
+    <header class="fixed top-0 w-full bg-cobalt text-cream z-50 on-blue">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center gap-4" aria-label="Main Navigation">
+            <a href="#" class="min-w-0 text-base sm:text-lg lg:text-xl leading-tight font-extrabold tracking-tight">Adegoke Oladipupo Ojo</a>
+
+            <!-- Desktop links -->
+            <ul class="hidden lg:flex items-center gap-8 text-base whitespace-nowrap">
+                <li><a href="#about" class="hover:underline underline-offset-4">About</a></li>
+                <li><a href="#skills" class="hover:underline underline-offset-4">Skills</a></li>
+                <li><a href="#projects" class="hover:underline underline-offset-4">Projects</a></li>
+                <li><a href="#log" class="hover:underline underline-offset-4">Learning Log</a></li>
+                <li><a href="#contact" class="border-2 border-cream px-4 py-2 rounded-lg font-semibold hover:bg-cream hover:text-navy transition">Contact Me</a></li>
+            </ul>
+
+            <!-- Phone menu (no JavaScript needed) -->
+            <details class="lg:hidden relative">
+                <summary class="list-none cursor-pointer min-h-[44px] px-3 sm:px-4 shrink-0 flex items-center rounded-lg border-2 border-cream font-semibold">Menu</summary>
+                <ul class="absolute right-0 mt-2 w-56 rounded-xl bg-paper text-navy p-2 shadow-lg">
+                    <li><a href="#about" class="block px-4 py-3 rounded-lg hover:bg-white">About</a></li>
+                    <li><a href="#skills" class="block px-4 py-3 rounded-lg hover:bg-white">Skills</a></li>
+                    <li><a href="#projects" class="block px-4 py-3 rounded-lg hover:bg-white">Projects</a></li>
+                    <li><a href="#log" class="block px-4 py-3 rounded-lg hover:bg-white">Learning Log</a></li>
+                    <li><a href="#contact" class="block px-4 py-3 rounded-lg hover:bg-white font-semibold">Contact Me</a></li>
+                </ul>
+            </details>
+        </nav>
+    </header>
+
+    <main id="main">
+        <!-- HERO SECTION: Only one <h1> per page for SEO -->
+        <section class="bg-cobalt text-cream pt-28 pb-20 md:pb-24 px-6 on-blue" aria-labelledby="hero-heading">
+            <div class="max-w-6xl mx-auto grid lg:grid-cols-[1.6fr_1fr] gap-12 lg:gap-16 items-center my-4 md:my-10 lg:my-16">
+                <div>
+                    <h1 id="hero-heading" class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter leading-[0.98] mb-6">
+                        Frontend Developer & Full-Stack Learner
+                    </h1>
+                    <p class="text-lg md:text-xl text-pale mb-8 max-w-[40ch]">
+                        Building clean, responsive, and accessible user interfaces with HTML, CSS, and JavaScript. Currently expanding my expertise into React, Next.js, and Backend systems.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                        <a href="#projects" class="bg-sun text-navy px-7 py-4 rounded-xl font-bold text-lg text-center">View My Work</a>
+                        <a href="resume.pdf"  download="Adegoke-Oladipupo-Resume.pdf" class="border-2 border-cream px-7 py-4 rounded-xl font-bold text-lg text-center hover:bg-cream hover:text-navy transition">Download Resume</a>
+                    </div>
+                </div>
+
+                <!-- Photo: shows "Your photo" until your-photo.jpg exists -->
+                <div class="relative aspect-[4/5] sm:aspect-[4/3] max-w-sm lg:max-w-none lg:aspect-auto lg:h-[400px] rounded-[28px] border-2 border-dashed border-cream/70 bg-[#2848E0] overflow-hidden flex items-center justify-center text-pale">
+                    <span>Your photo</span>
+                    <!-- SEO Tip: Always provide descriptive alt text for images -->
+                    <img src="your-photo.jpg" alt="Portrait of Adegoke Oladipupo Ojo" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">
+                </div>
+            </div>
+        </section>
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <!-- PROJECTS SECTION (first, as in the design: your work is the first thing below the hero) -->
+            <section id="projects" class="pt-20 md:pt-24" aria-labelledby="projects-heading">
+                <h2 id="projects-heading" class="text-3xl md:text-4xl font-extrabold tracking-tight mb-3">Project Gallery</h2>
+                <p class="text-body mb-8">A showcase of completed work and active learning experiments.</p>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+                    <article class="bg-white border border-line rounded-[20px] overflow-hidden">
+                        <div class="h-60 bg-[#F26A1B] flex flex-col justify-center p-7" role="img" aria-label="Preview of the Study tasks app showing the task: Finish the React useState lesson">
+                            <p class="text-3xl font-extrabold tracking-tight leading-[1.05] text-[#2B140D] mb-4">Finish the React useState lesson</p>
+                            <span class="self-start px-4 py-2.5 rounded-[10px] bg-[#2B140D] text-[#FFF1DF] font-bold text-sm">Mark done</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start gap-3 mb-2">
+                                <h3 class="text-2xl font-extrabold tracking-tight leading-tight">Study tasks</h3>
+                                <span class="shrink-0 text-xs border border-chip rounded-full px-3 py-1 font-semibold">Solo project</span>
+                            </div>
+                            <p class="text-body mb-4 min-h-[4.5rem]">A to-do app that keeps one task in focus, with undo and lists saved in the browser.</p>
+                            <ul class="flex flex-wrap gap-2 mb-5 text-sm" aria-label="Tools used">
+                                <li class="border border-chip rounded-full px-3 py-1">HTML</li>
+                                <li class="border border-chip rounded-full px-3 py-1">CSS</li>
+                                <li class="border border-chip rounded-full px-3 py-1">JavaScript</li>
+                            </ul>
+                            <div class="flex gap-5 items-center">
+                                <!-- Replace this link with the repo for this project -->
+                                <a href="https://github.com/Niestiola" target="_blank" rel="noopener noreferrer" class="text-cobalt font-bold underline underline-offset-4"><i class="fa-brands fa-github mr-1" aria-hidden="true"></i> Code</a>
+                                <!-- When the project is online, replace this with: <a href="LIVE-URL" target="_blank" rel="noopener noreferrer" class="text-cobalt font-bold underline underline-offset-4">Demo</a> -->
+                                <span class="text-muted text-sm italic">Demo coming soon</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="bg-white border border-line rounded-[20px] overflow-hidden">
+                        <!-- Replace this box with your screenshot: <img src="images/NAME.png" alt="Screenshot of NAME" class="h-60 w-full object-cover"> -->
+                        <div class="h-60 bg-[#E8ECF7] flex flex-col items-center justify-center gap-3 text-navy text-sm">
+                            <div class="w-24 h-[150px] border-[3px] border-navy rounded-[18px]"></div>
+                            <span>Add a screenshot of the app</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start gap-3 mb-2">
+                                <h3 class="text-2xl font-extrabold tracking-tight leading-tight">JokesPay</h3>
+                                <span class="shrink-0 text-xs border border-chip rounded-full px-3 py-1 font-semibold">Solo project</span>
+                            </div>
+                            <p class="text-body mb-4 min-h-[4.5rem]">My own solo build of a mock digital wallet app.</p>
+                            <!-- Add the tools you used, for example:
+                            <ul class="flex flex-wrap gap-2 mb-5 text-sm" aria-label="Tools used">
+                                <li class="border border-chip rounded-full px-3 py-1">React</li>
+                            </ul> -->
+                            <div class="mb-5"></div>
+                            <div class="flex gap-5 items-center">
+                                <!-- Replace this link with the repo for this project -->
+                                <a href="https://github.com/Niestiola" target="_blank" rel="noopener noreferrer" class="text-cobalt font-bold underline underline-offset-4"><i class="fa-brands fa-github mr-1" aria-hidden="true"></i> Code</a>
+                                <!-- When the project is online, replace this with: <a href="LIVE-URL" target="_blank" rel="noopener noreferrer" class="text-cobalt font-bold underline underline-offset-4">Demo</a> -->
+                                <span class="text-muted text-sm italic">Demo coming soon</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="bg-white border border-line rounded-[20px] overflow-hidden">
+                        <!-- Replace this box with your screenshot: <img src="images/NAME.png" alt="Screenshot of NAME" class="h-60 w-full object-cover"> -->
+                        <div class="h-60 bg-[#E8ECF7] flex flex-col items-center justify-center gap-3 text-navy text-sm">
+                            <div class="w-24 h-[150px] border-[3px] border-navy rounded-[18px]"></div>
+                            <span>Add a screenshot of the app</span>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex justify-between items-start gap-3 mb-2">
+                                <h3 class="text-2xl font-extrabold tracking-tight leading-tight">PayLab</h3>
+                                <span class="shrink-0 text-xs border border-chip rounded-full px-3 py-1 font-semibold">Team project</span>
+                            </div>
+                            <p class="text-body mb-4 min-h-[4.5rem]">A team bootcamp project with another student: a mock digital wallet and peer-to-peer payments app.</p>
+                            <ul class="flex flex-wrap gap-2 mb-5 text-sm" aria-label="Tools used">
+                                <li class="border border-chip rounded-full px-3 py-1">React</li>
+                                <li class="border border-chip rounded-full px-3 py-1">Node</li>
+                                <li class="border border-chip rounded-full px-3 py-1">Express</li>
+                                <li class="border border-chip rounded-full px-3 py-1">MongoDB</li>
+                            </ul>
+                            <div class="flex gap-5 items-center">
+                                <!-- Replace this link with the repo for this project -->
+                                <a href="https://github.com/Niestiola" target="_blank" rel="noopener noreferrer" class="text-cobalt font-bold underline underline-offset-4"><i class="fa-brands fa-github mr-1" aria-hidden="true"></i> Code</a>
+                                <!-- When the project is online, replace this with: <a href="LIVE-URL" target="_blank" rel="noopener noreferrer" class="text-cobalt font-bold underline underline-offset-4">Demo</a> -->
+                                <span class="text-muted text-sm italic">Demo coming soon</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- SKILLS SECTION -->
+            <section id="skills" class="pt-24 grid md:grid-cols-[1fr_2fr] gap-6 md:gap-8" aria-labelledby="skills-heading">
+                <h2 id="skills-heading" class="text-3xl md:text-4xl font-extrabold tracking-tight">Technical Toolkit</h2>
+                <div>
+                    <div class="grid md:grid-cols-[200px_1fr] gap-2 md:gap-4 py-4 border-t border-line">
+                        <h3 class="text-muted">Proficient</h3>
+                        <ul class="flex flex-wrap gap-2 text-base md:text-lg">
+                            <li class="border border-chip rounded-full px-4 py-2">HTML5</li>
+                            <li class="border border-chip rounded-full px-4 py-2">CSS3 / Grid / Flexbox</li>
+                            <li class="border border-chip rounded-full px-4 py-2">JavaScript (ES6+)</li>
+                            <li class="border border-chip rounded-full px-4 py-2">Responsive Design</li>
+                            <li class="border border-chip rounded-full px-4 py-2">Git & GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="grid md:grid-cols-[200px_1fr] gap-2 md:gap-4 py-4 border-t border-line">
+                        <h3 class="text-muted">Currently exploring</h3>
+                        <ul class="flex flex-wrap gap-2 text-base md:text-lg">
+                            <li class="border border-chip rounded-full px-4 py-2">React.js</li>
+                            <li class="border border-chip rounded-full px-4 py-2">Next.js</li>
+                            <li class="border border-chip rounded-full px-4 py-2">Node.js</li>
+                            <li class="border border-chip rounded-full px-4 py-2">MongoDB</li>
+                            <li class="border border-chip rounded-full px-4 py-2">REST APIs</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section id="about" class="pt-24 grid md:grid-cols-[1fr_2fr] gap-6 md:gap-8" aria-labelledby="about-heading">
+                <h2 id="about-heading" class="text-3xl md:text-4xl font-extrabold tracking-tight">My Journey into Code</h2>
+                <div class="max-w-[40ch] md:max-w-[46ch] text-xl md:text-2xl leading-snug space-y-5">
+                    <p>I started my journey with a curiosity for how the web works. After mastering the fundamentals of the frontend, I realized that I love the challenge of turning a blank screen into a functional user experience.</p>
+                    <p class="text-body">Right now, I'm in an intensive learning phase. I'm moving beyond static sites and diving deep into component-based architecture and server-side rendering to build faster, more scalable applications.</p>
+                </div>
+            </section>
+
+            <!-- LEARNING LOG SECTION -->
+            <section id="log" class="pt-24 max-w-3xl" aria-labelledby="log-heading">
+                <h2 id="log-heading" class="text-3xl md:text-4xl font-extrabold tracking-tight mb-10">The Learning Log</h2>
+                <div class="space-y-2">
+                    <div class="flex gap-6">
+                        <time datetime="2026-10-10" class="text-cobalt font-bold w-14 shrink-0 pt-0.5">Oct 10</time>
+                        <div class="border-l-2 border-line pl-6 pb-8">
+                            <h3 class="font-bold mb-1">Deployed First Next.js Application</h3>
+                            <p class="text-body">Successfully integrated GitHub with Vercel for continuous deployment.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <time datetime="2026-10-02" class="text-cobalt font-bold w-14 shrink-0 pt-0.5">Oct 02</time>
+                        <div class="border-l-2 border-line pl-6 pb-8">
+                            <h3 class="font-bold mb-1">Mastered React Hooks</h3>
+                            <p class="text-body">Completed deep-dive into useEffect and useState for stateful components.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- FOOTER: Semantic <footer> and <address> -->
+    <footer id="contact" class="px-6 pt-24 pb-16">
+        <div class="max-w-6xl mx-auto border-t-2 border-navy pt-12 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+            <h2 class="text-4xl md:text-5xl font-extrabold tracking-tighter leading-[1.02] max-w-[16ch]">Let's build something together</h2>
+            <address class="not-italic flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-6">
+                <a href="mailto:Adegokeoladipupo36@gmail.com" class="bg-navy text-cream px-6 sm:px-7 py-4 rounded-xl font-bold text-base sm:text-lg text-center break-all sm:break-normal">Adegokeoladipupo36@gmail.com</a>
+                <a href="https://github.com/Niestiola" target="_blank" rel="noopener noreferrer" class="font-bold underline underline-offset-4 text-lg"><i class="fa-brands fa-github mr-1" aria-hidden="true"></i> GitHub</a>
+            </address>
+        </div>
+        <p class="max-w-6xl mx-auto mt-12 text-sm text-muted">&copy; 2026 Adegoke Oladipupo Ojo</p>
+    </footer>
+
+</body>
+</html>
